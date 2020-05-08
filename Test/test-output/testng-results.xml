@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test-class Suite" duration-ms="80060" started-at="2020-05-08T11:59:13Z" finished-at="2020-05-08T12:00:33Z">
+    <groups>
+      <group name="sanity,regression,smoke">
+        <method signature="LibraryTest.contactUs()[pri:2, instance:Test.LibraryTest@4ec4f3a0]" name="contactUs" class="Test.LibraryTest"/>
+        <method signature="LibraryTest.fetauretest()[pri:1, instance:Test.LibraryTest@4ec4f3a0]" name="fetauretest" class="Test.LibraryTest"/>
+        <method signature="LibraryTest.testFreeTrial()[pri:0, instance:Test.LibraryTest@4ec4f3a0]" name="testFreeTrial" class="Test.LibraryTest"/>
+      </group> <!-- sanity,regression,smoke -->
+    </groups>
+    <test name="Test-class test 1" duration-ms="80060" started-at="2020-05-08T11:59:13Z" finished-at="2020-05-08T12:00:33Z">
+      <class name="Test.LibraryTest">
+        <test-method status="PASS" signature="setUpBeforeClass(org.testng.ITestContext)[pri:0, instance:Test.LibraryTest@4ec4f3a0]" name="setUpBeforeClass" is-config="true" duration-ms="4298" started-at="2020-05-08T11:59:13Z" finished-at="2020-05-08T11:59:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@477b4cdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="testFreeTrial()[pri:0, instance:Test.LibraryTest@4ec4f3a0]" name="testFreeTrial" duration-ms="57401" started-at="2020-05-08T11:59:17Z" description="open the URL and enter the email&#039;s" finished-at="2020-05-08T12:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFreeTrial -->
+        <test-method status="PASS" signature="fetauretest()[pri:1, instance:Test.LibraryTest@4ec4f3a0]" name="fetauretest" duration-ms="5931" started-at="2020-05-08T12:00:15Z" description="verify the flow of feature" finished-at="2020-05-08T12:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetauretest -->
+        <test-method status="PASS" signature="contactUs()[pri:2, instance:Test.LibraryTest@4ec4f3a0]" name="contactUs" duration-ms="12076" started-at="2020-05-08T12:00:21Z" description="verify the complete flow of " finished-at="2020-05-08T12:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.LibraryTest@4ec4f3a0]" name="tearDown" is-config="true" duration-ms="309" started-at="2020-05-08T12:00:33Z" finished-at="2020-05-08T12:00:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.LibraryTest -->
+    </test> <!-- Test-class test 1 -->
+  </suite> <!-- Test-class Suite -->
+</testng-results>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-class Suite" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.sentieo.listener.TestListener" />
+		<listener
+			class-name="com.sentieo.listener.AnnotationTransformer" />
+
+	</listeners>
+	<parameter name="browser" value="chrome" />
+	<parameter name="appUrl" value="http://joinassembly.com/" />
+	<test name="Test-class test 1">
+		<classes>
+			<class name="Test.LibraryTest" />
+		</classes>
+	</test>
+
+</suite> 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
+  <parameter name="password" value="password_placeholder"/>
+  <parameter name="os" value="MAC"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="appUrl" value="server_name"/>
+  <parameter name="username" value="username_placeholder"/>
+  <listeners>
+    <listener class-name="com.sentieo.listener.TestListener"/>
+    <listener class-name="com.sentieo.listener.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="3" name="Test-class test 1(failed)" parallel="tests">
+    <classes>
+      <class name="Test.LibraryTest">
+        <methods>
+          <include name="contactUs"/>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test.LibraryTest -->
+    </classes>
+  </test> <!-- Test-class test 1(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->
