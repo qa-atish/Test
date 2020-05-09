@@ -1,4 +1,3 @@
-# Test
 # Selenium + Java
 
 # Steps for the setup
