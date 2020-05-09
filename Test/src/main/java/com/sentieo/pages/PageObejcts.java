@@ -55,7 +55,7 @@ public class PageObejcts {
 		if (emailBox.size() > number) {
 			System.out.println("Total number of Email text box : " + emailBox.size());
 			for (int i = 0; i < emailBox.size(); i++) {
-				if (i == (number - 1)) {
+				if (i == (number)) {
 					WebElement ele = emailBox.get(i).findElement(By.cssSelector(".fs-16.form-control-new"));
 					((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ele);
 					actions.moveToElement(ele).click().sendKeys(wrongEmail).build().perform();
@@ -74,14 +74,16 @@ public class PageObejcts {
 		return false;
 	}
 
-	public void verifyTheSecondPage(String text) throws InterruptedException {
+	public boolean verifyTheSecondPage(String text) throws InterruptedException {
 		for (int i = 0; i < nextPageVerify.size(); i++) {
 			String getText = nextPageVerify.get(i).getText();
 			if (getText.equals(text)) {
 				driver.navigate().back();
 				Thread.sleep(2000);
+				return true;
 			}
 		}
+		return false;
 	}
 
 	public boolean selectTheButton(String text, String ann) throws InterruptedException {
