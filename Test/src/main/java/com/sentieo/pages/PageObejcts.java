@@ -80,7 +80,7 @@ public class PageObejcts {
 			if (getText.equals(text)) {
 				driver.navigate().back();
 				Thread.sleep(2000);
-				return true;
+				return false;
 			}
 		}
 		return false;
