@@ -22,7 +22,7 @@ public class LibraryTest extends BaseClass {
 			page = new PageObejcts(driver);
 			boolean status = page.verifyTheSecondPage("Check your email");
 			if (!status) {
-				assertTrue("Second Page not visible", false);
+				assertTrue("Second Page is not visible", false);
 			}
 		}
 	}
