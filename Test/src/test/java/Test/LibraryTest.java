@@ -1,57 +1,38 @@
 package Test;
 
-import static org.junit.Assert.assertTrue;
-
 import org.testng.annotations.Test;
 
 import com.sentieo.baseClass.BaseClass;
-import com.sentieo.pages.PageObejcts;
+import com.sentieo.pages.NewPageObject;
 
 public class LibraryTest extends BaseClass {
 
-	PageObejcts page = new PageObejcts(driver);
+	NewPageObject page = new NewPageObject(driver);
 
-	@Test(groups = "sanity,regression,smoke", description = "open the URL and enter the email's")
-	public void testFreeTrial() throws Exception {
+	@Test(groups = "sanity,regression,smoke", description = "verify the user registration flow")
+	public void register_user() throws Exception {
 
 		driver.get(appUrl);
-		Thread.sleep(3000);
-		page = new PageObejcts(driver);
-		boolean getValue = page.getEmailCount("abc@gmail.com", "abc@carrothr.com", 1);
-		if (getValue) {
-			page = new PageObejcts(driver);
-			boolean status = page.verifyTheSecondPage("Check your email");
-			if (!status) {
-				assertTrue("Second Page not visible", false);
-			}
-		}
+		Thread.sleep(2000);
+		page = new NewPageObject(driver);
+		page.registerUser("jimmy_100@sify.com", "tomHarry1");
 	}
 
-	@Test(groups = "sanity,regression,smoke", description = "verify the flow of feature", priority = 1)
-	public void fetauretest() throws Exception {
+	@Test(groups = "sanity,regression,smoke", description = "verify the forget password flow ")
+	public void forget_password() throws Exception {
 
-		page = new PageObejcts(driver);
-		boolean status = page.selectTheButton("Features", "Anniversaries & Birthdays");
-		if (!status) {
-			assertTrue("Anniversaries & Birthdays tab is not active yet", false);
-		}
+		driver.get("http://localhost:8080/WhatChaMaCallIt/login/forgotPassword");
+		Thread.sleep(2000);
+		page = new NewPageObject(driver);
+		page.password_User("jimmy_100@sify.com");
 	}
 
-	@Test(groups = "sanity,regression,smoke", description = "verify the complete flow of contact us ", priority = 2)
-	public void contactUs() throws Exception {
+	@Test(groups = "sanity,regression,smoke", description = "verify that user is able to login to the app ")
+	public void successful_Login() throws Exception {
 
-		page = new PageObejcts(driver);
-		driver.switchTo().defaultContent();
-		page.contactUS();
-		page = new PageObejcts(driver);
-		boolean status = page.setTextIntercom("slack");
-		if (status) {
-			boolean suggestionVisible = page.getSuggestions();
-			if (!suggestionVisible) {
-				assertTrue("Suggestion not visible", false);
-			}
-		} else {
-			assertTrue("Intercom is not opened", false);
-		}
+		driver.get("http://localhost:8080/WhatChaMaCallIt/login/index");
+		Thread.sleep(2000);
+		page = new NewPageObject(driver);
+		page.complete_Successful("quality@jukinmedia.com", "Test1ng");
 	}
 }
