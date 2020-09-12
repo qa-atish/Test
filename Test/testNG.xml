@@ -4,14 +4,13 @@
 		<listener class-name="com.sentieo.listener.TestListener" />
 		<listener
 			class-name="com.sentieo.listener.AnnotationTransformer" />
-
 	</listeners>
 	<parameter name="browser" value="chrome" />
-	<parameter name="appUrl" value="http://joinassembly.com/" />
+	<parameter name="appUrl"
+		value="http://localhost:8080/WhatChaMaCallIt/login/register" />
 	<test name="Test-class test 1">
 		<classes>
 			<class name="Test.LibraryTest" />
 		</classes>
 	</test>
-
 </suite> 
