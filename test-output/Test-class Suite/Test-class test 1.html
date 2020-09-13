@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>TestNG:  Test-class test 1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test-class test 1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 12 21:54:01 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31776 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.LibraryTest.forget_password()'><b>forget_password</b><br>Test class: Test.LibraryTest<br>Test method: verify the forget password flow <br/>
+<a href="#Output-1448823949" onClick='toggleBox("Output-1448823949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1448823949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1448823949">
+Enter email address for password reset :jimmy_100@sify.com<br/>
+Submit the details <br/>
+Close the confirmation popup :<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>Test.LibraryTest@396f6598</td></tr>
+<tr>
+<td title='Test.LibraryTest.register_user()'><b>register_user</b><br>Test class: Test.LibraryTest<br>Test method: verify the user registration flow<br/>
+<a href="#Output-1933612160" onClick='toggleBox("Output-1933612160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1933612160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1933612160">
+Enter UserName jimmy_100@sify.com<br/>
+Enter password tomHarry1<br/>
+Enter confirm password tomHarry1<br/>
+Submit the details <br/>
+User registered successfully <br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Test.LibraryTest@396f6598</td></tr>
+<tr>
+<td title='Test.LibraryTest.successful_Login()'><b>successful_Login</b><br>Test class: Test.LibraryTest<br>Test method: verify that user is able to login to the app <br/>
+<a href="#Output-625202763" onClick='toggleBox("Output-625202763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-625202763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-625202763">
+Enter UserName quality@jukinmedia.com<br/>
+Enter password Test1ng<br/>
+Submit the details <br/>
+User login successfully <br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Test.LibraryTest@396f6598</td></tr>
+</table><p>
+</body>
+</html>

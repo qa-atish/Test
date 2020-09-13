@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="appUrl" value="http://localhost:8080/WhatChaMaCallIt/login/register"/>
+  <listeners>
+    <listener class-name="com.sentieo.listener.TestListener"/>
+    <listener class-name="com.sentieo.listener.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="3" name="Test-class test 1(failed)" parallel="tests">
+    <classes>
+      <class name="Test.LibraryTest">
+        <methods>
+          <include name="register_user"/>
+          <include name="setUpBeforeClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test.LibraryTest -->
+    </classes>
+  </test> <!-- Test-class test 1(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->

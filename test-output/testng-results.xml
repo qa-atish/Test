@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Enter email address for password reset :jimmy_100@sify.com]]>
+    </line>
+    <line>
+      <![CDATA[Submit the details ]]>
+    </line>
+    <line>
+      <![CDATA[Close the confirmation popup :]]>
+    </line>
+    <line>
+      <![CDATA[Enter UserName jimmy_100@sify.com]]>
+    </line>
+    <line>
+      <![CDATA[Enter password tomHarry1]]>
+    </line>
+    <line>
+      <![CDATA[Enter confirm password tomHarry1]]>
+    </line>
+    <line>
+      <![CDATA[Submit the details ]]>
+    </line>
+    <line>
+      <![CDATA[User registered successfully ]]>
+    </line>
+    <line>
+      <![CDATA[Enter UserName quality@jukinmedia.com]]>
+    </line>
+    <line>
+      <![CDATA[Enter password Test1ng]]>
+    </line>
+    <line>
+      <![CDATA[Submit the details ]]>
+    </line>
+    <line>
+      <![CDATA[User login successfully ]]>
+    </line>
+  </reporter-output>
+  <suite name="Test-class Suite" duration-ms="31776" started-at="2020-09-12T16:24:01Z" finished-at="2020-09-12T16:24:33Z">
+    <groups>
+      <group name="sanity,regression,smoke">
+        <method signature="LibraryTest.forget_password()[pri:0, instance:Test.LibraryTest@396f6598]" name="forget_password" class="Test.LibraryTest"/>
+        <method signature="LibraryTest.register_user()[pri:0, instance:Test.LibraryTest@396f6598]" name="register_user" class="Test.LibraryTest"/>
+        <method signature="LibraryTest.successful_Login()[pri:0, instance:Test.LibraryTest@396f6598]" name="successful_Login" class="Test.LibraryTest"/>
+      </group> <!-- sanity,regression,smoke -->
+    </groups>
+    <test name="Test-class test 1" duration-ms="31776" started-at="2020-09-12T16:24:01Z" finished-at="2020-09-12T16:24:33Z">
+      <class name="Test.LibraryTest">
+        <test-method status="PASS" signature="setUpBeforeClass(org.testng.ITestContext)[pri:0, instance:Test.LibraryTest@396f6598]" name="setUpBeforeClass" is-config="true" duration-ms="8049" started-at="2020-09-12T16:24:01Z" finished-at="2020-09-12T16:24:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@ed9d034]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="forget_password()[pri:0, instance:Test.LibraryTest@396f6598]" name="forget_password" duration-ms="14898" started-at="2020-09-12T16:24:09Z" description="verify the forget password flow " finished-at="2020-09-12T16:24:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter email address for password reset :jimmy_100@sify.com]]>
+            </line>
+            <line>
+              <![CDATA[Submit the details ]]>
+            </line>
+            <line>
+              <![CDATA[Close the confirmation popup :]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- forget_password -->
+        <test-method status="PASS" signature="register_user()[pri:0, instance:Test.LibraryTest@396f6598]" name="register_user" duration-ms="5437" started-at="2020-09-12T16:24:24Z" description="verify the user registration flow" finished-at="2020-09-12T16:24:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter UserName jimmy_100@sify.com]]>
+            </line>
+            <line>
+              <![CDATA[Enter password tomHarry1]]>
+            </line>
+            <line>
+              <![CDATA[Enter confirm password tomHarry1]]>
+            </line>
+            <line>
+              <![CDATA[Submit the details ]]>
+            </line>
+            <line>
+              <![CDATA[User registered successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- register_user -->
+        <test-method status="PASS" signature="successful_Login()[pri:0, instance:Test.LibraryTest@396f6598]" name="successful_Login" duration-ms="3199" started-at="2020-09-12T16:24:30Z" description="verify that user is able to login to the app " finished-at="2020-09-12T16:24:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter UserName quality@jukinmedia.com]]>
+            </line>
+            <line>
+              <![CDATA[Enter password Test1ng]]>
+            </line>
+            <line>
+              <![CDATA[Submit the details ]]>
+            </line>
+            <line>
+              <![CDATA[User login successfully ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- successful_Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.LibraryTest@396f6598]" name="tearDown" is-config="true" duration-ms="140" started-at="2020-09-12T16:24:33Z" finished-at="2020-09-12T16:24:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.LibraryTest -->
+    </test> <!-- Test-class test 1 -->
+  </suite> <!-- Test-class Suite -->
+</testng-results>
